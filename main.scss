@@ -88,17 +88,18 @@ footer {
   line-height: 30px;
   white-space: nowrap;
   margin-top: 100px;
-
-  transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-
+  
   &:hover, &:hover, &:focus {
     color: white;
     background-color: #3498db;
     border: 2px solid white;
     text-decoration: none;
   }
+}
 
+.button-transition {
+  transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
 }
