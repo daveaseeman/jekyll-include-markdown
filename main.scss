@@ -21,14 +21,16 @@ html, body, .container {
 }
 
 header {
-  height: 100px;
-  line-height: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
   border-top: 2px solid #3498db;
   border-bottom: 2px solid #3498db;
 }
 
 header > span {
   max-width: 50%;
+  text-align: left;
   float: left;
   display: inline;
 }
