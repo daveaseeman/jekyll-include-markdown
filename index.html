@@ -1,0 +1,37 @@
+---
+# Frontmatter
+---
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <title>Include Markdown Without Plugins - by @daveaseeman</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header>
+    <span>Jekyll - Include Markdown</span>
+    <ul>
+      <li><a href="#hack">Hack</a></li>
+      <li><a href="#basics">Basics</a></li>
+      <li><a href="#advanced">Advanced</a></li>
+    </ul>
+  </header>
+  
+  {% include markdown.html file="include-markdown-hack" selector="section" id="hack" %}
+  <hr>
+  {% include markdown.html file="include-markdown-basics" selector="section" id="basics" %}
+  <hr>
+  {% include markdown.html file="include-markdown-advanced" selector="section" id="advanced"%}
+
+  <footer>
+    <p>By <a href="http://daveaseeman.github.io"><em>Seemingly</em> <strong>Creative</strong></a></p>
+  </footer>
+
+</body>
+
+</html>
