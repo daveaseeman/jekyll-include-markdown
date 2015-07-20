@@ -28,11 +28,13 @@ header {
 }
 
 header > span {
+  max-width: 50%;
   float: left;
   display: inline;
 }
 
 nav {
+  max-width: 50%;
   float: right;
   text-align: right;
   ul {
@@ -45,14 +47,14 @@ nav {
    }
 }
 
-ul {
-  list-style-type: none;
-}
+// ul {
+//   list-style-type: none;
+// }
 
-ul > li {
-  padding: 15px;
-  display: inline-block;
-}
+// ul > li {
+//   padding: 15px;
+//   display: inline-block;
+// }
 
 // img {
 //   width: 300px;
