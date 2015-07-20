@@ -28,11 +28,13 @@ header {
   border-bottom: 2px solid #3498db;
 }
 
-header > span {
-  max-width: 50%;
-  text-align: left;
-  float: left;
-  display: inline;
+header {
+  span {
+    max-width: 50%;
+    text-align: left;
+    float: left;
+    display: inline;
+  }
 }
 
 nav {
