@@ -22,12 +22,14 @@
     </ul>
   </header>
   
-  {% include markdown.html file="include-markdown-hack" selector="section" id="hack" %}
-  <hr>
-  {% include markdown.html file="include-markdown-basics" selector="section" id="basics" %}
-  <hr>
-  {% include markdown.html file="include-markdown-advanced" selector="section" id="advanced"%}
-
+  <div class="container">
+    {% include markdown.html file="include-markdown-hack" selector="section" id="hack" %}
+    <hr>
+    {% include markdown.html file="include-markdown-basics" selector="section" id="basics" %}
+    <hr>
+    {% include markdown.html file="include-markdown-advanced" selector="section" id="advanced"%}
+  </div>
+  
   <footer>
     <p>By <a href="http://daveaseeman.github.io"><em>Seemingly</em> <strong>Creative</strong></a></p>
   </footer>
