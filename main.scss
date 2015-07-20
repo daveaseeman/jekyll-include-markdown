@@ -21,8 +21,8 @@ html, body, .container {
 }
 
 header {
-  height: 50px;
-  line-height: 50px;
+  max-height: 100px;
+  line-height: 30px;
   font-size: 30px;
   border-top: 2px solid #3498db;
   border-bottom: 2px solid #3498db;
