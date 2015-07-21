@@ -6,12 +6,6 @@
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
 
-* {
-  padding: 0;
-  margin: 0 auto;
-  line-height: 1.5;
-}
-
 html, body, .container {
   height: 100%;  
 }
@@ -51,23 +45,6 @@ nav {
    }
 }
 
-// ul {
-//   list-style-type: none;
-// }
-
-// ul > li {
-//   padding: 15px;
-//   display: inline-block;
-// }
-
-// img {
-//   width: 300px;
-//   height: 300px;
-//   -webkit-border-radius: 150px;
-//   -moz-border-radius: 150px;
-//   border-radius: 150px;
-// }
-
 .container {
   font-family: 'lato', serif;
   text-align: center;
@@ -99,12 +76,6 @@ footer {
 // }
 // .collapse+ input:checked + *{
 //   display:inline-block;
-// }
- 
-// .workshop {
-//   text-align: left;
-//   padding-left: 30px;
-//   padding-right: 30px;
 // }
 
 .button {
