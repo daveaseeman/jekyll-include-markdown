@@ -1,4 +1,3 @@
-{% capture file %}{% endcapture %}
 {%if include.selector%}<{{include.selector}} {%if include.classes%}class="{{include.classes}}"{%endif%} {%if include.id%}id="{{include.id}}{%endif%}">{%endif%}
   {% capture markdown %}{% include _markdown/{{include.file}}.md %}{% endcapture %}{{ markdown | markdownify }}
 {%if include.selector%}</{{include.selector}}>{%endif%}
