@@ -1,4 +1,5 @@
-# Not Included
+# Introduction
+_markdown not included, some assembly required_
 Currently, Jekyll's `include` feature does not support the inclusion and proper rendering of markdown files. There are two main ways around this:
 1. You can write a plugin to convert the markdown to html when your site builds.
 2. You can capture the file as a liquid variable and then apply the `markdownify` filter.
