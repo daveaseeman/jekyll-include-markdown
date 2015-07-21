@@ -12,19 +12,18 @@
   <link rel="stylesheet" href="main.css">
 </head>
 
+<header>
+  <span>Include Markdown</span>
+  <nav>
+    <ul>
+      <li><a href="#intro" class="button-transition">Intro</a></li>
+      <li><a href="#hack" class="button-transition">Hack</a></li>
+      <li><a href="#custom" class="button-transition">Custom</a></li>
+    </ul>
+  </nav>
+</header>
+  
 <body>
-  
-  <header>
-    <span>Include Markdown</span>
-    <nav>
-      <ul>
-        <li><a href="#intro" class="button-transition">Intro</a></li>
-        <li><a href="#hack" class="button-transition">Hack</a></li>
-        <li><a href="#custom" class="button-transition">Custom</a></li>
-      </ul>
-    </nav>
-  </header>
-  
   <div class="container">
     {% include markdown.html path="_markdown/include-markdown-intro.md" selector="section" id="intro" classes="full-height" %}
     <hr>
@@ -32,11 +31,10 @@
     <hr>
     {% include markdown.html path="_markdown/include-markdown-custom.md" selector="section" id="custom" classes="full-height" %}
   </div>
-  
-  <footer>
-    <p>By <a href="http://daveaseeman.github.io"><em>Seemingly</em> <strong>Creative</strong></a></p>
-  </footer>
-
 </body>
+
+<footer>
+ <p>By <a href="http://daveaseeman.github.io"><em>Seemingly</em> <strong>Creative</strong></a></p>
+</footer>
 
 </html>
