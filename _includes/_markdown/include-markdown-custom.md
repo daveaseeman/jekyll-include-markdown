@@ -3,7 +3,7 @@ _include anything you need_<br>
 You can imagine how this method would allow for a great deal of customization. Since you can pass as many parameters to the include as you would like, you can do stuff like this:
 ```ruby
 {%if include.selector%}<{{include.selector}} {%if include.classes%}class="{{include.classes}}"{%endif%} {%if include.id%}id="{{include.id}}{%endif%}">{%endif%}
-  {% capture markdown %}{% include _markdown/{{include.file}}.md %}{% endcapture %}{{ markdown | markdownify }}
+  {% capture markdown %}{% include {{include.path}} %}{% endcapture %}{{ markdown | markdownify }}
 {%if include.selector%}</{{include.selector}}>{%endif%}
 ```
 
