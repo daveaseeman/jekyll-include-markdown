@@ -3,7 +3,7 @@ _set it and forget it_<br>
 The way we get around the issues discussed above is by capturing the markdown file as a parameter and passing it to an html include. Here is in three easy steps:
 ## Step 1:
 Put that capture/markdownify block in it's own include. Mine is called `_includes/markdown.html`:
-```ruby
+```html
 {% capture markdown %}{% include your_markdown_file.md %}{% endcapture %}{{ markdown | markdownify }}
 ```
 
@@ -15,7 +15,7 @@ Include that html file wherever you want to include markdown, and pass it the ma
 
 ## Step 3:
 Loosen up that `markdown.html` file, change `your_markdown_file` to the parameter `{{ include.file }}`:
-```ruby
+```html
 {% capture markdown %}{% include {{ include.file }}.md %}{% endcapture %}{{ markdown | markdownify }}
 ```
 
