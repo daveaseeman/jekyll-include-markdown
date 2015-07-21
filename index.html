@@ -19,20 +19,20 @@
       <span>Include Markdown</span>
       <nav>
         <ul>
+          <li><a href="#intro" class="button-transition">Intro</a></li>
           <li><a href="#hack" class="button-transition">Hack</a></li>
-          <li><a href="#basics" class="button-transition">Basics</a></li>
-          <li><a href="#advanced" class="button-transition">Advanced</a></li>
+          <li><a href="#custom" class="button-transition">Custom</a></li>
         </ul>
       </nav>
     </div>
   </header>
   
   <div class="container">
+    {% include markdown.html file="include-markdown-intro" selector="section" id="intro" classes="full-height" %}
+    <hr>
     {% include markdown.html file="include-markdown-hack" selector="section" id="hack" classes="full-height" %}
     <hr>
-    {% include markdown.html file="include-markdown-basics" selector="section" id="basics" classes="full-height" %}
-    <hr>
-    {% include markdown.html file="include-markdown-advanced" selector="section" id="advanced" classes="full-height" %}
+    {% include markdown.html file="include-markdown-custom" selector="section" id="custom" classes="full-height" %}
   </div>
   
   <footer>
