@@ -7,7 +7,7 @@ specifying a markdown file's name as a parameter in the include tag, and
 ## Create the Include
 Create a an html include that accepts a parameter specifying the path to the file being included. Mine is called `_includes/markdown.html`:
 ```
-{% capture markdown %}{% include {{ include.path }} %}{% endcapture %}{{ markdown | markdownify }}
+<!--{% capture markdown %}{% include {{ include.path }} %}{% endcapture %}{{ markdown | markdownify }}-->
 ```
 
 ## Pass the File Name
