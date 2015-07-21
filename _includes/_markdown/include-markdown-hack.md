@@ -1,24 +1,21 @@
 # The Hack
 _set it and forget it_<br>
-The way we get around the issues discussed above is by capturing the markdown file as a parameter and passing it to an html include. Here is in three easy steps:
-## Step 1:
-Put that capture/markdownify block in it's own include. Mine is called `_includes/markdown.html`:
+The way we get around the issues discussed above is by creating an html include that accepts the included file's path as a parameter and renders it.
+
+specifying a markdown file's name as a parameter in the include tag, and 
+
+## Create the Include
+Create a an html include that accepts a parameter specifying the path to the file being included. Mine is called `_includes/markdown.html`:
 ```
-{% capture markdown %}{% include <your_markdown_file.md> %}{% endcapture %}{{ markdown | markdownify }}
+{% capture markdown %}{% include {{ include.path }} %}{% endcapture %}{{ markdown | markdownify }}
 ```
 
-## Step 2:
-Include that html file wherever you want to include markdown, and pass it the markdown file's name as a parameter. My parameter's name is `file`:
+## Pass the File Name
+Include the html file, and pass it the name of the markdown to be rendered, in this case, `path`:
 ```
-{% include markdown.html file="<your_markdown_file.md>" %}
-```
-
-## Step 3:
-Loosen up that `markdown.html` file, change `your_markdown_file` to the parameter `{{ include.file }}`:
-```
-{% capture markdown %}{% include {{ include.file }}.md %}{% endcapture %}{{ markdown | markdownify }}
+{% include markdown.html path="" %}
 ```
 
-And now you're all set! That one html include will allow you to include markdown files anywhere on your Jekyll site simply by passing the filename as a parameter.
+And now you're all set! That one html include will allow you to include markdown files anywhere on your Jekyll site simply by passing the file path as a parameter.
 
 But wait, there's more!
